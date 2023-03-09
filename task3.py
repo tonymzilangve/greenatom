@@ -10,6 +10,7 @@ soup = BS(webpage, 'html.parser')
 
 all_tags = soup.find_all()
 tags_with_attrs = 0
+
 for tag in all_tags:
     if tag.attrs:
         tags_with_attrs += 1
